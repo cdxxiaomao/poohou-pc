@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2f2f2f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="flask" class="cls-1" d="M284,1228H268a3,3,0,0,1-3-3v-20a3,3,0,0,1,3-3h2v-2h-1a2,2,0,0,1,0-4h14a2,2,0,0,1,0,4h-1v2h2a3,3,0,0,1,3,3v20A3,3,0,0,1,284,1228Zm-3-23H271a3,3,0,0,0-3,3v5.84a5.838,5.838,0,0,0,3.324,1.16c2.5,0,5.663-3,8.319-3a15.377,15.377,0,0,1,4.357.66V1208A3,3,0,0,0,281,1205Z" transform="translate(-260 -1196)"/>
+</svg>

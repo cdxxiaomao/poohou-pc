@@ -1,0 +1,23 @@
+.p-select .p-dropdown-toggle > .btn {
+  padding-left: 15px;
+  padding-right: 36px;
+  display: block; }
+  .p-select .p-dropdown-toggle > .btn > i.icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -8px;
+    line-height: 17px; }
+  .p-select .p-dropdown-toggle > .btn > span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block; }
+.p-select.select-s > .p-dropdown-toggle > .btn {
+  padding-right: 30px; }
+.p-select.select-m > .p-dropdown-toggle > .btn {
+  padding-right: 34px; }
+.p-select.select-b > .p-dropdown-toggle > .btn {
+  padding-right: 40px; }
+
+/*# sourceMappingURL=select.css.map */

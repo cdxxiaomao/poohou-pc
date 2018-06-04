@@ -1,0 +1,166 @@
+@charset "UTF-8";
+//**下拉
+
+.p-dropdown {
+    overflow: visible;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    border-radius: $round;
+    &:hover{
+        z-index: 99;
+    }
+    >.p-dropdown-toggle>.btn{
+            font-size: 16px
+    }
+    >.p-menu{
+        visibility: hidden;
+        opacity: 0;
+        right: 0;
+        position: absolute;
+        transition: .3s;
+        width: 100%;
+        min-width: 200px;
+        bottom: 100%;
+        margin-bottom: 20px;
+        &.menu-top{
+            bottom: 100%;
+            margin-bottom: 20px;
+            display: block;
+            &:after{
+                content: "";
+                position: absolute;
+                height: 12px;
+                width: 100%;
+                left: 0;
+                bottom: -11px
+            }
+        }
+        &.menu-bottom{
+            top: 100%;
+            margin-top: 20px;
+            bottom: inherit;
+            margin-bottom: inherit;
+            display: block;
+            &:after{
+                content: "";
+                position: absolute;
+                height: 12px;
+                width: 100%;
+                left: 0;
+                top: -11px
+            }
+        }
+        &.menu-right{
+            right: inherit;
+            left: 0;
+        }
+        
+    }
+    &.active{
+        z-index: 100;
+        >.p-menu{
+            visibility: visible;
+            opacity: 100;
+            &.menu-top{
+                margin-bottom: 10px; 
+            }
+            &.menu-bottom{
+                margin-top: 10px; 
+            }
+            
+        }
+    }
+    >select{
+        display: none
+    }
+    &.round{
+        overflow: visible;
+        >.p-dropdown-toggle,>.p-dropdown-toggle>.btn{
+            border-radius: 1000px;
+            overflow: hidden
+        }
+    }
+    
+    //*颜色
+    &.bg-main{
+        >.p-dropdown-toggle>.btn{
+            @include btn-color($color-main);
+        }
+        >.p-menu{
+            @include menu-bg($color-main)
+        }
+    }
+    &.bg-second{
+        >.p-dropdown-toggle>.btn{
+            @include btn-color( $color-second)
+        }
+        >.p-menu{
+            @include menu-bg($color-second)
+        }
+    }
+    &.bg-red{
+        >.p-dropdown-toggle>.btn{
+            @include btn-color($color-red)
+        }
+        >.p-menu{
+            @include menu-bg($color-red)
+        }
+    }
+    &.bg-orange{
+        >.p-dropdown-toggle>.btn{
+            @include btn-color($color-orange)
+        }
+        >.p-menu{
+            @include menu-bg($color-orange)
+        }
+    }
+    &.bg-blue{
+        >.p-dropdown-toggle>.btn{
+            @include btn-color($color-blue)
+        }
+        >.p-menu{
+            @include menu-bg($color-blue)
+        }
+    }
+    &.bg-green{
+        >.p-dropdown-toggle>.btn{
+            @include btn-color($color-green)
+        }
+        >.p-menu{
+            @include menu-bg($color-green)
+        }
+    }
+    //大小
+    &.p-dropdown-s,&.select-s{
+        >.p-dropdown-toggle>.btn{
+            font-size: 12px;
+            height: 38px;
+            line-height: 38px;
+            >*{
+                font-size: 12px
+            }
+        }
+    }
+    &.p-dropdown-m,&.select-m{
+        >.p-dropdown-toggle>.btn{
+            font-size: 14px;
+            height: 44px;
+            line-height: 44px;
+            >*{
+                font-size: 14px
+            }
+        }
+    }
+    &.p-dropdown-b,&.select-b{
+        >.p-dropdown-toggle>.btn{
+            font-size: 18px;
+            height: 56px;
+            line-height: 56px;
+            >*{
+                font-size: 18px
+            }
+        }
+    }
+}

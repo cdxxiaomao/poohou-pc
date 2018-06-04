@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/*文本框组合*/
+.tool-group{
+    display: inline-block;
+    vertical-align: middle;
+    color: $font-color-main;
+    .tool-group-title{
+        background: #ebebeb;
+        border: 1px solid #d4d4d4;
+        border-radius: $round;
+    }
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    >*{
+        float: left;
+        margin-left: -1px;
+        position: relative;
+        z-index: 2;
+        &:first-child:not(:last-child){
+            margin-left: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            .btn{
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+        &:last-child:not(:first-child){
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            .btn{
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+        &:not(:first-child):not(:last-child){
+            border-radius: 0;
+            .btn{
+                border-radius: 0
+            }
+        }
+    }
+    
+    
+    >input[type='text'],>input[type='password']{
+//        background: #fff;
+        z-index: 1;
+        &:focus{
+            z-index: 3
+        }
+    }
+    
+    //按钮上下数字组件
+    >.btn-group-vertical.btn-amount{
+            position: relative;
+            >.btn{
+                position: relative;
+                height: 26px;
+                padding-bottom: 0;
+                line-height: 26px;
+                &:first-child{
+                    height: 25px;
+                }
+            }
+            &.btn-group-b{
+                .btn{
+                    height: 28px;
+                    line-height: 28px;
+                    padding-bottom: 0;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    &:first-child{
+                        height: 29px;
+                    }
+                }
+            }
+            &.btn-group-m{
+                .btn{
+                    height: 23px;
+                    line-height: 22px;
+                    padding-bottom: 0;
+                    padding-left: 14px;
+                    padding-right: 14px;
+                    &:first-child{
+                        height: 22px;
+                    }
+
+                }
+            }
+            &.btn-group-s{
+                .btn{
+                    height: 19px;
+                    line-height: 20px;
+                    padding-bottom: 0;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    &:first-child{
+                        height: 20px;
+                    }
+                    .icon-triangle-up{
+                        top: -5px
+                    }
+                }
+            }
+        
+    }
+    &.round{
+        overflow:initial;
+        >:first-child{
+            border-top-left-radius: 1000px;
+            border-bottom-left-radius: 1000px;
+            .btn:first-child{
+                border-top-left-radius: 1000px;
+                border-bottom-left-radius: 1000px;
+            }
+        }
+        >:last-child{
+            border-top-right-radius: 1000px;
+            border-bottom-right-radius: 1000px;
+            .btn:last-child{
+                border-top-right-radius: 1000px;
+                border-bottom-right-radius: 1000px;
+            }
+        }
+//        >.btn-group-vertical.btn-amount{
+            >.btn-group-vertical:first-child{
+                    >:first-child{
+                        border-top-left-radius: 1000px;
+                        border-bottom-left-radius: 0
+                    }
+                    >:last-child{
+                        border-bottom-left-radius: 1000px;
+                    }
+                    
+            }
+            >.btn-group-vertical:last-child{
+                    >:first-child{
+                        border-top-right-radius: 1000px;
+                    }
+                    >:last-child{
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 1000px;
+                    }
+                    
+            }
+            
+//        }
+    }
+    
+    .tool-group-title{
+        &.bg-main{
+            border-color: $color-main
+        }
+        &.bg-second{
+            border-color: $color-second
+        }
+        &.bg-red{
+            border-color: $color-red
+        }
+        &.bg-orange{
+            border-color: $color-orange
+        }
+        &.bg-blue{
+            border-color: $color-blue
+        }
+        &.bg-green{
+            border-color: $color-green
+        }
+    }
+}

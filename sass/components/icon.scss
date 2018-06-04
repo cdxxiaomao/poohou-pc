@@ -1,0 +1,20 @@
+@charset "UTF-8";
+//其他图标
+.icon-triangle-up{
+    display: inline-block;
+    width:0;    
+    height:0;   
+    border:6px solid transparent;    
+    border-bottom-color:#999999;
+    position: relative;
+    top:-3px
+}
+.icon-triangle-down{
+    display: inline-block;
+    width:0;    
+    height:0;   
+    border:6px solid transparent;    
+    border-top-color:#999999;
+    position: relative;
+    top:3px
+}

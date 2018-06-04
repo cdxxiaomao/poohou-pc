@@ -1,0 +1,99 @@
+@charset "UTF-8";
+//**菜单
+.p-menu,.p-menu ul{
+    border: 1px solid $border-color;
+    border-radius: $round;
+    background: #fff;
+    width: 200px;
+    display: inline-block;
+    li{
+        position: relative;
+        border-bottom: 1px solid lighten($border-color, 6%);
+        &:last-child{
+            border: none
+        }
+        >a{
+            font-size: 14px;
+            padding: 8px;
+            display: block;
+            color: $font-color-main;
+            border-radius: $round;
+            transition: .3s;
+            margin: 2px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: default;
+        }
+        >ul{
+            position: absolute;
+            right: 100%;
+            top: 15%;
+            margin-right: 5px;
+            margin-top: -2px;
+            z-index: -100;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            &:after{
+                content: "";
+                position: absolute;
+                right: -5px;
+                width: 5px;
+                top: 0;
+                height: 40px;
+            }
+        }
+        &:not([disabled]):hover{
+            >a{
+                background: $color-main;
+                color: #fff;
+                cursor: pointer
+            }
+            >ul{
+                top: 0;
+                opacity: 100;
+                z-index: 100;
+                visibility: visible
+            }
+        }
+        &[disabled]{
+            >a{
+                color: lighten($font-color-main, 30%)
+            }
+        }
+    }
+    &.menu-right{
+        li{
+            >ul{
+                right: inherit;
+                margin-right: inherit;
+                left: 100%;
+                margin-left: 5px;
+                &:after{
+                    right: inherit;
+                    left: -5px;
+                }
+            }
+        }
+    }
+    //颜色风格
+    &.bg-main{
+        @include menu-bg($color-main)
+    }
+    &.bg-second{
+        @include menu-bg($color-second)
+    }
+    &.bg-red{
+        @include menu-bg($color-red)
+    }
+    &.bg-orange{
+        @include menu-bg($color-orange)
+    }
+    &.bg-green{
+        @include menu-bg($color-green)
+    }
+    &.bg-blue{
+        @include menu-bg($color-blue)
+    }
+}

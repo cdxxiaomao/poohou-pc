@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2f2f2f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="caret-left" class="cls-1" d="M635.556,170.144l7.66-7.866c0.779-.8,1.783.223,1.783,1.832v15.778c0,1.609-.979,2.637-1.783,1.833l-7.66-7.867A3.237,3.237,0,0,1,635.556,170.144Z" transform="translate(-624 -156)"/>
+</svg>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*栅格化系统*/
+.row{
+    zoom: 1;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    >*{
+        float: left
+    }
+    .col-1{
+        width: 100/12 +"%"
+    }
+}

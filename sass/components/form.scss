@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/*表单主要样式*/
+
+//输入框
+.input-text {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 50px;
+    min-width: 16em;
+    background: lighten($border-color, 6%);
+    border-radius: $round;
+    border-width: 1px;
+    border-style: solid;
+    vertical-align: middle;
+    outline: none;
+    transition: .2s;
+    @include form-bd($border-color);
+    line-height: normal;
+    &[disabled],&[readonly] {
+        border-color: $border-color;
+        background: lighten($border-color, 6%);
+        color: darken($border-color, 12%)
+    }
+}
+textarea{
+    &.input-text{
+        height: auto!important;
+        line-height: 26px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        min-height: 50px;
+        &.input-s{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            line-height: 20px
+        }
+        &.input-m{
+            padding-top: 14px;
+            padding-bottom: 14px;
+            line-height: 22px
+        }
+        &.input-b{
+            padding-top: 18px;
+            padding-bottom: 18px;
+            line-height: 26px
+        }
+    }
+}
+//**选择框
+.input-choice {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 16px;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    &>span,
+    &>input[type="checkbox"],
+    &>input[type="radio"],
+    &>span:after,
+    &>span:before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: .2s;
+        box-sizing: border-box;
+    }
+    >span {
+        z-index: 1;
+        &:before {
+            content: "\e98a";
+            font-family: "icon"!important;
+            z-index: 2;
+            line-height: 1.5em;
+            font-size: 0.8em;
+            text-align: center;
+            color: $color-main;
+            opacity: 0;
+        }
+        &:after {
+            content: "";
+            z-index: 1;
+            background: lighten($border-color, 6%);
+            border-radius: $round;
+            border-width: 1px;
+            border-style: solid;
+            @include form-bd($border-color);
+        }
+    }
+    //radio
+    &>input[type="checkbox"],
+    &>input[type="radio"] {
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+        &:not(:disabled) {
+            &:checked~span {
+                &:before {
+                    opacity: 1
+                }
+            }
+            &:hover~span {
+                &:after {
+                    background: #fff
+                }
+            }
+        }
+        //禁止
+        &:disabled {
+            cursor: default;
+            &~span {
+                &:after {
+                    border-color: lighten($border-color, .3%)
+                }
+            }
+        }
+    }
+    &.round {
+        >span {
+            &:after {
+                border-radius: 1000px
+            }
+        }
+    }
+    &.input-s{
+        >span{
+            &:before{
+                line-height: 16px
+            }
+        }
+    }
+}
+
+//颜色
+[type="text"],
+[type="password"],
+textarea {
+    &.input-main {
+        @include form-bg($color-main);
+    }
+    &.input-second {
+        @include form-bg($color-second);
+    }
+    &.input-orange {
+        @include form-bg($color-orange);
+    }
+    &.input-red {
+        @include form-bg($color-red);
+    }
+    &.input-blue {
+        @include form-bg($color-blue);
+    }
+    &.input-green {
+        @include form-bg($color-green);
+    }
+    &.input-bd-main {
+        @include form-bd($color-main);
+    }
+    &.input-bd-second {
+        @include form-bd($color-second);
+    }
+    &.input-bd-orange {
+        @include form-bd($color-orange);
+    }
+    &.input-bd-red {
+        @include form-bd($color-red);
+    }
+    &.input-bd-blue {
+        @include form-bd($color-blue);
+    }
+    &.input-bd-green {
+        @include form-bd($color-green);
+    }
+}
+
+.input-choice {
+    &.input-main {
+        @include choice-bg($color-main)
+    }
+    &.input-bd-main {
+        @include choice-bd($color-main)
+    }
+    &.input-second {
+        @include choice-bg($color-second)
+    }
+    &.input-bd-second {
+        @include choice-bd($color-second)
+    }
+    &.input-orange {
+        @include choice-bg($color-orange)
+    }
+    &.input-bd-orange {
+        @include choice-bd($color-orange)
+    }
+    &.input-red {
+        @include choice-bg($color-red)
+    }
+    &.input-bd-red {
+        @include choice-bd($color-red)
+    }
+    &.input-blue {
+        @include choice-bg($color-blue)
+    }
+    &.input-bd-blue {
+        @include choice-bd($color-blue)
+    }
+    &.input-green {
+        @include choice-bg($color-green)
+    }
+    &.input-bd-green {
+        @include choice-bd($color-green)
+    }
+}
+
+
+//边框颜色
+//大小
+.input-choice.input-s {
+    font-size: 12px
+}
+
+.input-choice.input-m {
+    font-size: 14px
+}
+
+.input-choice.input-b {
+    font-size: 18px
+}
+

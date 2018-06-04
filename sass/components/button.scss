@@ -1,0 +1,332 @@
+@charset "UTF-8";
+//默认按钮
+.btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: $round;
+    transition: 0.3s;
+    @include btn-color($font-color-main);
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    .input-choice{
+        margin-top: -2px
+    }
+}
+
+//按钮组合
+.btn-group {
+    display: inline-block;
+    vertical-align: middle;
+    >.btn {
+        float: left;
+        border-radius: 0;
+        margin-left: -1px;
+        border-color: darken(#ebebeb, 8%);
+        &:first-child {
+            margin-left: 0;
+            border-top-left-radius: $round;
+            border-bottom-left-radius: $round
+        }
+        &:last-child {
+            border-top-right-radius: $round;
+            border-bottom-right-radius: $round
+        }
+    }
+    &:not([disabled]){
+        >.btn{
+            @include btn-color($font-color-main)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($font-color-main)
+        }
+    }
+    &.round{
+        &:not(.btn-group-vertical){
+            >.btn{
+                &:first-child {
+                    border-top-left-radius: 1000px;
+                    border-bottom-left-radius: 1000px
+                }
+                &:last-child {
+                    border-top-right-radius: 1000px;
+                    border-bottom-right-radius: 1000px
+                }
+            }
+        }
+        &.btn-group-vertical{
+            >.btn{
+                &:first-child {
+                    border-top-left-radius: 1000px;
+                    border-top-right-radius: 1000px
+                }
+                &:last-child {
+                    border-bottom-left-radius: 1000px;
+                    border-bottom-right-radius: 1000px
+                }
+            }
+        }
+    }
+    &.btn-group-justified{
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+//        border-collapse: collapse;
+        >.btn{
+            display: table-cell;
+            float: none;
+            margin: 0;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            white-space:nowrap; 
+            overflow:hidden; 
+            text-overflow:ellipsis;
+        }
+    }
+}
+
+
+
+//按钮组合垂直
+.btn-group-vertical{
+    >.btn{
+        float: none;
+        display: block;
+        margin-left: 0;
+        margin-top: -1px;
+        &:first-child{
+            margin-top: 0;
+            border-top-right-radius: $round;
+            border-bottom-left-radius: 0
+        }
+        &:last-child{
+            border-top-right-radius: 0;
+            border-bottom-left-radius: $round
+        }
+    }
+}
+
+//---------按钮颜色----------
+//主色调
+.btn-main {
+     @include btn-color( $color-main)
+}
+.btn-second {
+     @include btn-color( $color-second)
+}
+.btn-red {
+     @include btn-color( $color-red)
+}
+.btn-orange {
+     @include btn-color( $color-orange)
+}
+.btn-blue {
+     @include btn-color( $color-blue)
+}
+.btn-green {
+     @include btn-color( $color-green)
+}
+
+//---------按钮组合颜色----------
+.btn-group-main{
+    &:not([disabled]){
+        >.btn{
+            @include btn-color( $color-main)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($color-main)
+        }
+    }
+}
+.btn-group-second{
+    &:not([disabled]){
+        >.btn{
+            @include btn-color( $color-second)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($color-second)
+        }
+    }
+}
+.btn-group-red{
+    &:not([disabled]){
+        >.btn{
+            @include btn-color( $color-red)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($color-red)
+        }
+    }
+}
+.btn-group-orange{
+    &:not([disabled]){
+        >.btn{
+            @include btn-color( $color-orange)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($color-orange)
+        }
+    }
+}
+.btn-group-blue{
+    &:not([disabled]){
+        >.btn{
+            @include btn-color( $color-blue)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($color-blue)
+        }
+    }
+}
+.btn-group-green{
+    &:not([disabled]){
+        >.btn{
+            @include btn-color( $color-green)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-disabled($color-green)
+        }
+    }
+}
+
+//---------镂空按钮----------
+//默认色
+.btn-bd {
+    @include btn-bd-color($font-color-second)
+}
+
+//主色
+.btn-bd-main{
+    @include btn-bd-color($color-main)
+}
+
+//副色
+.btn-bd-second{
+    @include btn-bd-color($color-second)
+}
+
+//红色
+.btn-bd-red{
+    @include btn-bd-color($color-red)
+}
+
+//橙色
+.btn-bd-orange{
+    @include btn-bd-color($color-orange)
+}
+
+//蓝色
+.btn-bd-blue{
+    @include btn-bd-color($color-blue)
+}
+
+//绿色
+.btn-bd-green{
+    @include btn-bd-color($color-green)
+}
+
+//---------镂空按钮组合----------
+.btn-group-bd{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color($font-color-main)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($font-color-main)
+        }
+    }
+}
+.btn-group-bd-main{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color( $color-main)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($color-main)
+        }
+    }
+}
+.btn-group-bd-second{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color( $color-second)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($color-second)
+        }
+    }
+}
+.btn-group-bd-red{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color( $color-red)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($color-red)
+        }
+    }
+}
+.btn-group-bd-orange{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color( $color-orange)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($color-orange)
+        }
+    }
+}
+.btn-group-bd-blue{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color( $color-blue)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($color-blue)
+        }
+    }
+}
+.btn-group-bd-green{
+    &:not([disabled]){
+        >.btn{
+            @include btn-bd-color( $color-green)
+        }
+    }
+    &[disabled]{
+        >.btn{
+            @include btn-bd-disabled($color-green)
+        }
+    }
+}

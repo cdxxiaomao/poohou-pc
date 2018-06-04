@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2f2f2f;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="eye" class="cls-1" d="M380,475c8.837,0,16,9,16,9s-7.163,9-16,9-16-9-16-9S371.163,475,380,475Zm0,4a5,5,0,1,1-5,5A5,5,0,0,1,380,479Z" transform="translate(-364 -468)"/>
+</svg>

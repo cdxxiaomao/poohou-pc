@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>下拉</title>
+    <link rel="stylesheet" type="text/css" href="css/pui-pc.css" />
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/pui-pc.js"></script>
+</head>
+
+<body>
+   <div class="plr30 mt30">
+        <h3 class="fz30">Dropdown</h3>
+    </div>
+    <div class="mlr30 mt30 bt pt20">
+        <div class="clear">
+            <div class="fl mr10">
+                <div class="p-dropdown" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>默认</span><i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="http://www.baidu.com">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a  href="http://www.baidu.com">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="fl mr10">
+                <div class="p-dropdown" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>带disabled</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="#">disabled</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li disabled>
+                                    <a href="#">disabled</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl mr10">
+                <div class="p-dropdown round" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>圆的Dropdown </span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="#">disabled</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li disabled>
+                                    <a href="#">disabled</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="plr30 mt30">
+        <h3 class="fz16 mt20 mb10">事件与回调</h3>
+
+        <div class="clear">
+            <div class="fl mr10">
+                <!--demo begin-->
+                <script>
+                    $(function () {
+                        $("#dropdownHover").pDropdown({
+                            event: "hover",
+                            callback: function (e) {
+                                alert("你点击的是第" + parseInt(e.index() + 1) + "个，内容为" + e.text())
+                            }
+                        })
+                    })
+                </script>
+                <div class="p-dropdown" id="dropdownHover">
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>hover事件下拉</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li>
+                            <a href="#">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--demo end-->
+            </div>
+            <div class="fl mr10">
+                <!--demo begin-->
+                <script>
+                    $(function () {
+                        $("#dropdown01").pDropdown({
+                            isTake: true,
+                            callback: function (e) {
+                                alert("你点击的是第" + parseInt(e.index() + 1) + "个，内容为" + e.text())
+                            }
+                        })
+                    })
+                </script>
+                <div class="p-dropdown" id="dropdown01">
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>获取内容并回调</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li>
+                            <a href="http://www.baidu.com">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--demo end-->
+            </div>
+        </div>
+
+    </div>
+    <div class="plr30 mt30">
+        <div class="clear">
+            <h3 class="fz16 mt20 mb10">尺寸</h3>
+            <div class="fl mr10">
+                <div class="p-dropdown p-dropdown-s" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>尺寸小</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="#">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl mr10">
+                <div class="p-dropdown p-dropdown-m" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>尺寸中</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="#">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl mr10">
+                <div class="p-dropdown" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>默认</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="#">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl mr10">
+                <div class="p-dropdown p-dropdown-b" dropdown>
+                    <div class="p-dropdown-toggle">
+                        <button class="btn"><span>尺寸大</span> <i class="icon icon-caret-down di-vm"></i></button>
+                    </div>
+                    <ul class="p-menu">
+                        <li disabled>
+                            <a href="#">选项一</a>
+                        </li>
+                        <li>
+                            <a href="#">选项二</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">选项三</a>
+                        </li>
+                        <li>
+                            <a href="#">选项四</a>
+                        </li>
+                        <li>
+                            <a href="#" class="p-te">选项五</a>
+                            <ul>
+                                <li>
+                                    <a href="#">子级选项一</a>
+
+                                </li>
+                                <li>
+                                    <a href="#">子级选项二</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="plr30 mt30 clear">
+        <h3 class="fz16 mt20 mb10">下拉按钮配色</h3>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-main"><span>按钮主色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-second"><span>按钮副色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-red"><span>按钮红色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-orange"><span>按钮橙色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-green"><span>按钮绿色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-blue"><span>按钮蓝色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="plr30 mt30 clear">
+        <h3 class="fz16 mt20 mb10">综合配色</h3>
+        <div class="fl mr10">
+            <div class="p-dropdown bg-main" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn"><span>综合主色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li disabled>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li disabled>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown bg-second" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn"><span>综合副色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li disabled>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown bg-red" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn"><span>综合红色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li disabled>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown bg-orange" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn"><span>综合橙色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li disabled>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown bg-green" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn"><span>综合绿色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li disabled>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown bg-blue" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn"><span>综合蓝色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu">
+                    <li disabled>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="plr30 mt30 clear">
+        <h3 class="fz16 mt20 mb10">下拉按钮+菜单自由配色</h3>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-main"><span>菜单绿色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu bg-green">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-second"><span>菜单蓝色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu bg-blue">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-red"><span>菜单橙色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu bg-orange">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-orange"><span>菜单红色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu bg-red">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-green"><span>菜单副色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu bg-second">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fl mr10">
+            <div class="p-dropdown" dropdown>
+                <div class="p-dropdown-toggle">
+                    <button class="btn btn-blue"><span>菜单主色</span> <i class="icon icon-caret-down di-vm"></i></button>
+                </div>
+                <ul class="p-menu bg-main">
+                    <li>
+                        <a href="#">选项一</a>
+                    </li>
+                    <li>
+                        <a href="#">选项二</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">选项三</a>
+                    </li>
+                    <li>
+                        <a href="#">选项四</a>
+                    </li>
+                    <li>
+                        <a href="#" class="p-te">选项五</a>
+                        <ul>
+                            <li>
+                                <a href="#">子级选项一</a>
+
+                            </li>
+                            <li>
+                                <a href="#">子级选项二</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </div>
+</body>
+
+</html>

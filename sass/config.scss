@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+//==========默认圆角=================
+$round:4px;
+//==========色调=================
+
+$color-main:#289def;        //主色
+$color-second:#6a6eea;      //次色
+$border-color:#e7eaec;      //边框颜色
+$font-color-main:#535353;   //文字主色
+$font-color-second:#535353; //文字色
+//常用色彩
+$color-red:#ef5166;             //红色
+$color-blue:#4395FF;        //蓝色
+$color-green:#31b495;       //绿色
+$color-orange:#ffb76f;       //橙色
+//主色
+.color-main{
+    color: $color-main !important;
+}
+//副色
+.color-second{
+    color: $color-second !important;
+}
+//常用色
+.color-red{
+    color: $color-red !important;
+}
+.color-blue{
+    color: $color-blue !important;
+}
+.color-green{
+    color: $color-green !important;
+}
+.color-orange{
+    color: $color-orange !important;
+}
+//----------文字 begin-----------
+.font-color-main{
+    color: $font-color-main !important;
+}
+.font-color-second{
+    color: $font-color-second !important;
+}
+//----------文字 end-------------
+
+
+
+
+//主背景
+.bg-main{
+    @include bg-main;
+}
+//副背景
+.bg-second{
+    @include bg-second;
+}
+//常用背景
+.bg-red{
+    @include bg-red;
+}
+.bg-blue{
+    @include bg-blue;
+}
+.bg-green{
+    @include bg-green;
+}
+.bg-orange{
+    @include bg-orange;
+}
+//----------背景 end------------
+
+//主要圆角
+.main-round{
+    border-radius: $round;
+}
+
+
+//文本框按钮等组件尺寸
+//默认
+.input-text,
+.btn,
+.btn-group>.btn,
+.tool-group-title
+{
+    @include size
+}
+//小
+.input-text.input-s,
+.btn.btn-s,
+.btn-group.btn-group-s>.btn,
+.tool-group-title.tool-group-title-s
+{
+    @include size-s
+}
+//中
+.input-text.input-m,
+.btn.btn-m,
+.btn-group.btn-group-m>.btn,
+.tool-group-title.tool-group-title-m
+{
+    @include size-m
+}
+//大
+.input-text.input-b,
+.btn.btn-b,
+.btn-group.btn-group-b>.btn,
+.tool-group-title.tool-group-title-b
+{
+    @include size-b
+}
+
+
+
+
+

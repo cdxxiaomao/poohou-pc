@@ -1,0 +1,49 @@
+@charset "UTF-8";
+//选择
+.p-select {
+    .p-dropdown-toggle {
+        >.btn {
+            padding-left: 15px;
+            padding-right: 36px;
+            display: block;
+            >i.icon {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                margin-top: -8px;
+                line-height: 17px
+            }
+            >span{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                display: block;
+            }
+        }
+    }
+    >.p-menu{
+        max-height: 200px;
+        overflow-y: auto;
+    }
+    &.select-s {
+        >.p-dropdown-toggle {
+            >.btn {
+                padding-right: 30px
+            }
+        }
+    }
+    &.select-m {
+        >.p-dropdown-toggle {
+            >.btn {
+                padding-right: 34px
+            }
+        }
+    }
+    &.select-b {
+        >.p-dropdown-toggle {
+            >.btn {
+                padding-right: 40px
+            }
+        }
+    }
+}

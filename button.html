@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>按钮</title>
+    <link rel="stylesheet" type="text/css" href="css/pui-pc.css" />
+    <script src="js/jquery-1.11.0.js"></script>
+</head>
+
+<body>
+    <div class="bb mlr30 ptb10 mt30">
+        <h4>默认样式</h4>
+    </div>
+    <div class="plr30 pt20">
+        <button class="btn mb10">默认按钮 (.btn)</button>
+        <button class="btn mb10" disabled>失效按钮 (.btn .btn-disable)</button>
+        <button class="btn round mb10">圆角按钮 (.btn .round)</button>
+        <button class="btn db w-full">铺满按钮 (.btn .db)</button>
+    </div>
+    <div class="bb mlr30 ptb10 mt30">
+        <h4>按钮大小</h4>
+    </div>
+    <div class="plr30 pt20">
+        <button class="btn btn-s mb10">按钮小 (.btn .btn-s)</button>
+        <button class="btn btn-m mb10">按钮中 (.btn .btn-m)</button>
+        <button class="btn mb10">按钮默认 (.btn)</button>
+        <button class="btn btn-b mb10">按钮大 (.btn .btn-b)</button>
+    </div>
+    <div class="plr30 pt20">
+        <label class="btn btn-s mb10"><i class="input-choice input-s"><input type="checkbox"><span></span></i></label>
+        <label class="btn btn-m mb10"><i class="input-choice input-m"><input type="checkbox"><span></span></i></label>
+        <label class="btn mb10"><i class="input-choice"><input type="checkbox"><span></span></i></label>
+        <label class="btn btn-b mb10"><i class="input-choice input-b"><input type="checkbox"><span></span></i></label>
+    </div>
+    <div class="bb mlr30 ptb10 mt30">
+        <h4>按钮颜色</h4>
+    </div>
+    <div class="plr30 pt20">
+        <button class="btn btn-main mb10">主色 (.btn .btn-bd-main)</button>
+        <button class="btn btn-second mb10">副色 (.btn .btn-bd-second)</button>
+        <button class="btn btn-red mb10">红色 (.btn .btn-bd-red)</button>
+        <button class="btn btn-orange mb10">橙色 (.btn .btn-bd-orange)</button>
+        <button class="btn btn-blue mb10">蓝色 (.btn .btn-bd-blue)</button>
+        <button class="btn btn-green mb10">绿色 (.btn .btn-bd-green)</button>
+    </div>
+    <div class="bb mlr30 ptb10">
+        <h4>失效按钮颜色</h4>
+    </div>
+    <div class="plr30 pt20">
+        <button class="btn btn-main mb10" disabled>主色 (.btn .btn-bd-main)</button>
+        <button class="btn btn-second mb10" disabled>副色 (.btn .btn-bd-second)</button>
+        <button class="btn btn-red mb10" disabled>红色 (.btn .btn-bd-red)</button>
+        <button class="btn btn-orange mb10" disabled>橙色 (.btn .btn-bd-orange)</button>
+        <button class="btn btn-blue mb10" disabled>蓝色 (.btn .btn-bd-blue)</button>
+        <button class="btn btn-green mb10" disabled>绿色 (.btn .btn-bd-green)</button>
+    </div>
+    <div class="bb mlr30 ptb10 mt30">
+        <h4>镂空按钮</h4>
+    </div>
+    <div class="plr30 pt20">
+        <button class="btn btn-bd mb10">默认 (.btn .btn-bd)</button>
+        <button class="btn btn-bd-main mb10">主色 (.btn .btn-bd-main)</button>
+        <button class="btn btn-bd-second mb10">副色 (.btn .btn-bd-second)</button>
+        <button class="btn btn-bd-red mb10">红色 (.btn .btn-bd-red)</button>
+        <button class="btn btn-bd-orange mb10">橙色 (.btn .btn-bd-orange)</button>
+        <button class="btn btn-bd-blue mb10">蓝色 (.btn .btn-bd-blue)</button>
+        <button class="btn btn-bd-green mb10">绿色 (.btn .btn-bd-green)</button>
+    </div>
+    <div class="bb mlr30 ptb10">
+        <h4>失效镂空按钮</h4>
+    </div>
+    <div class="plr30 pt20">
+        <button class="btn btn-bd mb10" disabled>默认 (.btn .btn-bd)</button>
+        <button class="btn btn-bd-main mb10" disabled>主色 (.btn .btn-bd-main)</button>
+        <button class="btn btn-bd-second mb10" disabled>副色 (.btn .btn-bd-second)</button>
+        <button class="btn btn-bd-red mb10" disabled>红色 (.btn .btn-bd-red)</button>
+        <button class="btn btn-bd-orange mb10" disabled>橙色 (.btn .btn-bd-orange)</button>
+        <button class="btn btn-bd-blue mb10" disabled>蓝色 (.btn .btn-bd-blue)</button>
+        <button class="btn btn-bd-green mb10" disabled>绿色 (.btn .btn-bd-green)</button>
+    </div>
+
+    <div class=" mlr30 ptb10 mt30">
+        <h3 class="fz24">按钮组合</h3>
+    </div>
+    <div class="bb mlr30 ptb10 mt10">
+        <h4>按钮组合</h4>
+    </div>
+    <div class="plr30 pt20">
+        <div class="btn-group">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group round">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-justified mt10">
+            <a href="#" class="btn active">按钮自动铺满</a>
+            <a href="#" class="btn">不过圆角实现不了</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+    </div>
+    <div class="bb mlr30 ptb10 mt10">
+        <h4>组合按钮大小</h4>
+    </div>
+    <div class="plr30 pt20">
+        <div class="btn-group btn-group-s">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+
+        <div class="btn-group btn-group-m">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+
+        <div class="btn-group">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+
+        <div class="btn-group btn-group-b">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>3</a>
+        </div>
+    </div>
+    <div class=" mlr30 ptb10 bb mt30">
+        <h4>按钮组合垂直</h4>
+    </div>
+    <div class="plr30 pt20">
+       <div class="btn-group btn-group-vertical btn-group-b">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+        
+        <div class="btn-group btn-group-vertical">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+        
+        <div class="btn-group btn-group-vertical round">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+        
+        <div class="btn-group btn-group-vertical btn-group-m">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+        
+        <div class="btn-group btn-group-vertical btn-group-s btn-group-main">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+        </div>
+    </div>
+    <div class="bb mlr30 ptb10 mt10">
+        <h4>组合按钮颜色</h4>
+    </div>
+    <div class="plr30 pt20">
+       <div class="btn-group">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-main">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-second">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-red">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-orange">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-blue">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-green">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+    </div>
+    
+    <div class="bb mlr30 ptb10 mt10">
+        <h4>失效组合按钮颜色</h4>
+    </div>
+    <div class="plr30 pt20">
+       <div class="btn-group" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-main" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-second" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-red" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-orange" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-blue" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-green" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+    </div>
+    
+    <div class="bb mlr30 ptb10 mt10">
+        <h4>镂空按钮组合</h4>
+    </div>
+    <div class="plr30 pt20">
+       <div class="btn-group btn-group-bd">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-bd-main">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-bd-second">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-bd-red">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-bd-orange">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-bd-blue">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+        <div class="btn-group btn-group-bd-green">
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn" disabled>4</a>
+        </div>
+    </div>
+    <div class="bb mlr30 ptb10 mt10 ">
+        <h4>失效镂空按钮组合</h4>
+    </div>
+    <div class="plr30 pt20 pb30">
+       <div class="btn-group btn-group-bd" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-bd-main" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-bd-second" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-bd-red" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-bd-orange" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-bd-blue" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+        <div class="btn-group btn-group-bd-green" disabled>
+            <a href="#" class="btn active">1</a>
+            <a href="#" class="btn">2</a>
+            <a href="#" class="btn">3</a>
+            <a href="#" class="btn">4</a>
+        </div>
+    </div>
+</body>
+
+</html>

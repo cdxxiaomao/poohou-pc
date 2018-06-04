@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>YTUI-fontIcon</title>
+    <link rel="stylesheet" href="css/pui-pc.css" />
+    <style>
+        .icon-list li{
+            float: left;
+            width:152px;
+            height: 104px;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+            padding: 10px;
+            padding-top: 18px;
+            margin-left: -1px;
+            margin-top: -1px;
+            transition: .3s;
+            position: relative;
+            z-index: 1
+        }
+        .icon-list li:hover{
+            background: #434343;
+            color: #fff;
+            z-index: 2;
+            border-color: #000
+        }
+        .icon-list li:hover span{
+            color: #fff
+        }
+        .icon-list li i{
+            font-size: 24px;
+        }
+        .icon-list li h4{
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 6px
+        }
+        .icon-list li span{
+            color: #333;
+            font-size: 12px;
+            display: block;
+            margin-top: 4px;
+            transition: .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon-list clear">
+        <ul>
+            <li>
+                <i class="icon-doc"></i>
+                <h4>.icon-doc</h4>
+                <span>\e900</span>
+            </li>
+            <li>
+                <i class="icon-doc-add"></i>
+                <h4>.icon-doc-add</h4>
+                <span>\e901</span>
+            </li>
+            <li>
+                <i class="icon-doc-del"></i>
+                <h4>.icon-doc-del</h4>
+                <span>\e902</span>
+            </li>
+            <li>
+                <i class="icon-folder"></i>
+                <h4>.icon-folder</h4>
+                <span>\e903</span>
+            </li>
+            <li>
+                <i class="icon-folder-add"></i>
+                <h4>.icon-folder-add</h4>
+                <span>\e904</span>
+            </li>
+            <li>
+                <i class="icon-folder-del"></i>
+                <h4>.icon-folder-del</h4>
+                <span>\e905</span>
+            </li>
+            <li>
+                <i class="icon-user"></i>
+                <h4>.icon-user</h4>
+                <span>\e60e</span>
+            </li>
+            <li>
+                <i class="icon-user-add"></i>
+                <h4>.icon-user-add</h4>
+                <span>\e907</span>
+            </li>
+            <li>
+                <i class="icon-user-del"></i>
+                <h4>.icon-user-del</h4>
+                <span>\e908</span>
+            </li>
+            
+            <li>
+                <i class="icon-group"></i>
+                <h4>.icon-group</h4>
+                <span>\e909</span>
+            </li>
+            <li>
+                <i class="icon-group-add"></i>
+                <h4>.icon-group-add</h4>
+                <span>\e90a</span>
+            </li>
+            <li>
+                <i class="icon-group-del"></i>
+                <h4>.icon-group-del</h4>
+                <span>\e90b</span>
+            </li>
+            <li>
+                <i class="icon-sex"></i>
+                <h4>.icon-sex</h4>
+                <span>\e62d</span>
+            </li>
+            <li>
+                <i class="icon-sex-male"></i>
+                <h4>.icon-sex-male</h4>
+                <span>\e90d</span>
+            </li>
+            <li>
+                <i class="icon-sex-female"></i>
+                <h4>.icon-sex-female</h4>
+                <span>\e90e</span>
+            </li>
+            <li>
+                <i class="icon-man"></i>
+                <h4>.icon-man</h4>
+                <span>\e90f</span>
+            </li>
+            <li>
+                <i class="icon-woman"></i>
+                <h4>.icon-woman</h4>
+                <span>\e910</span>
+            </li>
+            <li>
+                <i class="icon-id"></i>
+                <h4>.icon-id</h4>
+                <span>\e911</span>
+            </li>
+            <li>
+                <i class="icon-map"></i>
+                <h4>.icon-map</h4>
+                <span>\e628</span>
+            </li>
+            <li>
+                <i class="icon-map-marker"></i>
+                <h4>.icon-map-marker</h4>
+                <span>\e629</span>
+            </li>
+            <li>
+                <i class="icon-pencil"></i>
+                <h4>.icon-pencil</h4>
+                <span>\e601</span>
+            </li>
+            <li>
+                <i class="icon-edit"></i>
+                <h4>.icon-edit</h4>
+                <span>\e603</span>
+            </li>
+            <li>
+                <i class="icon-add"></i>
+                <h4>.icon-add</h4>
+                <span>\e615</span>
+            </li>
+            <li>
+                <i class="icon-close"></i>
+                <h4>.icon-close</h4>
+                <span>\e98a</span>
+            </li>
+            <li>
+                <i class="icon-ok"></i>
+                <h4>.icon-ok</h4>
+                <span>\e625</span>
+            </li>
+            <li>
+                <i class="icon-check"></i>
+                <h4>.icon-check</h4>
+                <span>\e633</span>
+            </li>
+            <li>
+                <i class="icon-del"></i>
+                <h4>.icon-del</h4>
+                <span>\e604</span>
+            </li>
+            <li>
+                <i class="icon-lock"></i>
+                <h4>.icon-lock</h4>
+                <span>\e608</span>
+            </li>
+            <li>
+                <i class="icon-lock-open"></i>
+                <h4>.icon-lock-open</h4>
+                <span>\e956</span>
+            </li>
+            <li>
+                <i class="icon-wrench"></i>
+                <h4>.icon-wrench</h4>
+                <span>\e922</span>
+            </li>
+            <li>
+                <i class="icon-set"></i>
+                <h4>.icon-set</h4>
+                <span>\e60c</span>
+            </li>
+            <li>
+                <i class="icon-home"></i>
+                <h4>.icon-home</h4>
+                <span>\e605</span>
+            </li>
+            <li>
+                <i class="icon-search"></i>
+                <h4>.icon-search</h4>
+                <span>\e606</span>
+            </li>
+            <li>
+                <i class="icon-heart-empty"></i>
+                <h4>.icon-heart-empty</h4>
+                <span>\e94b</span>
+            </li>
+            <li>
+                <i class="icon-heart"></i>
+                <h4>.icon-heart</h4>
+                <span>\e610</span>
+            </li>
+            <li>
+                <i class="icon-comment"></i>
+                <h4>.icon-comment</h4>
+                <span>\e612</span>
+            </li>
+            <li>
+                <i class="icon-menu"></i>
+                <h4>.icon-menu</h4>
+                <span>\e614</span>
+            </li>
+            <li>
+                <i class="icon-star-empty"></i>
+                <h4>.icon-star-empty</h4>
+                <span>\e977</span>
+            </li>
+            <li>
+                <i class="icon-star"></i>
+                <h4>.icon-star</h4>
+                <span>\e61e</span>
+            </li>
+            <li>
+                <i class="icon-message"></i>
+                <h4>.icon-message</h4>
+                <span>\e61a</span>
+            </li>
+            <li>
+                <i class="icon-module"></i>
+                <h4>.icon-module</h4>
+                <span>\e62a</span>
+            </li>
+            <li>
+                <i class="icon-lightbulb"></i>
+                <h4>.icon-lightbulb</h4>
+                <span>\e61d</span>
+            </li>
+            <li>
+                <i class="icon-more"></i>
+                <h4>.icon-more</h4>
+                <span>\e61c</span>
+            </li>
+            <li>
+                <i class="icon-time"></i>
+                <h4>.icon-time</h4>
+                <span>\e626</span>
+            </li>
+            <li>
+                <i class="icon-bell"></i>
+                <h4>.icon-bell</h4>
+                <span>\e988</span>
+            </li>
+            <li>
+                <i class="icon-calendar"></i>
+                <h4>.icon-calendar</h4>
+                <span>\e969</span>
+            </li>
+            <li>
+                <i class="icon-checkin"></i>
+                <h4>.icon-checkin</h4>
+                <span>\e972</span>
+            </li>
+            <li>
+                <i class="icon-handshake"></i>
+                <h4>.icon-handshake</h4>
+                <span>\e94a</span>
+            </li>
+            <li>
+                <i class="icon-news"></i>
+                <h4>.icon-news</h4>
+                <span>\e940</span>
+            </li>
+            <li>
+                <i class="icon-send"></i>
+                <h4>.icon-send</h4>
+                <span>\e92c</span>
+            </li>
+            <li>
+                <i class="icon-save"></i>
+                <h4>.icon-save</h4>
+                <span>\e600</span>
+            </li>
+            <li>
+                <i class="icon-shopping-cart"></i>
+                <h4>.icon-shopping-cart</h4>
+                <span>\e92f</span>
+            </li>
+            <li>
+                <i class="icon-bag"></i>
+                <h4>.icon-bag</h4>
+                <span>\e986</span>
+            </li>
+            <li>
+                <i class="icon-eye"></i>
+                <h4>.icon-eye</h4>
+                <span>\e630</span>
+            </li>
+            <li>
+                <i class="icon-eye-close"></i>
+                <h4>.icon-eye-close</h4>
+                <span>\e966</span>
+            </li>
+            <li>
+                <i class="icon-tel"></i>
+                <h4>.icon-tel</h4>
+                <span>\e917</span>
+            </li>
+            <li>
+                <i class="icon-cloud"></i>
+                <h4>.icon-cloud</h4>
+                <span>\e976</span>
+            </li>
+            <li>
+                <i class="icon-upload"></i>
+                <h4>.icon-upload</h4>
+                <span>\e91a</span>
+            </li>
+            <li>
+                <i class="icon-download"></i>
+                <h4>.icon-download</h4>
+                <span>\e961</span>
+            </li>
+            <li>
+                <i class="icon-refresh"></i>
+                <h4>.icon-refresh</h4>
+                <span>\e926</span>
+            </li>
+            <li>
+                <i class="icon-exchange"></i>
+                <h4>.icon-exchange</h4>
+                <span>\e964</span>
+            </li>
+            <li>
+                <i class="icon-filter"></i>
+                <h4>.icon-filter</h4>
+                <span>\e946</span>
+            </li>
+            <li>
+                <i class="icon-compress"></i>
+                <h4>.icon-compress</h4>
+                <span>\e97a</span>
+            </li>
+            <li>
+                <i class="icon-diamond"></i>
+                <h4>.icon-diamond</h4>
+                <span>\e95b</span>
+            </li>
+            <li>
+                <i class="icon-medal"></i>
+                <h4>.icon-medal</h4>
+                <span>\e938</span>
+            </li>
+            <li>
+                <i class="icon-crown"></i>
+                <h4>.icon-crown</h4>
+                <span>\e97c</span>
+            </li>
+            <li>
+                <i class="icon-vip"></i>
+                <h4>.icon-vip</h4>
+                <span>\e91c</span>
+            </li>
+            <li>
+                <i class="icon-question"></i>
+                <h4>.icon-question</h4>
+                <span>\e925</span>
+            </li>
+            <li>
+                <i class="icon-warning"></i>
+                <h4>.icon-warning</h4>
+                <span>\e91e</span>
+            </li>
+            <li>
+                <i class="icon-shield"></i>
+                <h4>.icon-shield</h4>
+                <span>\e92e</span>
+            </li>
+            <li>
+                <i class="icon-hot"></i>
+                <h4>.icon-hot</h4>
+                <span>\e94e</span>
+            </li>
+            <li>
+                <i class="icon-laud"></i>
+                <h4>.icon-laud</h4>
+                <span>\e62c</span>
+            </li>
+            <li>
+                <i class="icon-despise"></i>
+                <h4>.icon-despise</h4>
+                <span>\e95a</span>
+            </li>
+            <li>
+                <i class="icon-camera"></i>
+                <h4>.icon-camera</h4>
+                <span>\e96a</span>
+            </li>
+            <li>
+                <i class="icon-picture"></i>
+                <h4>.icon-picture</h4>
+                <span>\e942</span>
+            </li>
+            <li>
+                <i class="icon-customer-service"></i>
+                <h4>.icon-customer-service</h4>
+                <span>\e97d</span>
+            </li>
+            <li>
+                <i class="icon-smile"></i>
+                <h4>.icon-smile</h4>
+                <span>\e930</span>
+            </li>
+            <li>
+                <i class="icon-sad"></i>
+                <h4>.icon-sad</h4>
+                <span>\e928</span>
+            </li>
+            <li>
+                <i class="icon-tag"></i>
+                <h4>.icon-tag</h4>
+                <span>\e916</span>
+            </li>
+            <li>
+                <i class="icon-qr-code"></i>
+                <h4>.icon-qr-code</h4>
+                <span>\e924</span>
+            </li>
+            <li>
+                <i class="icon-compass"></i>
+                <h4>.icon-compass</h4>
+                <span>\e979</span>
+            </li>
+            <li>
+                <i class="icon-briefcase"></i>
+                <h4>.icon-briefcase</h4>
+                <span>\e616</span>
+            </li>
+            <li>
+                <i class="icon-box"></i>
+                <h4>.icon-box</h4>
+                <span>\e989</span>
+            </li>
+            <li>
+                <i class="icon-link"></i>
+                <h4>.icon-link</h4>
+                <span>\e954</span>
+            </li>
+            <li>
+                <i class="icon-globe"></i>
+                <h4>.icon-globe</h4>
+                <span>\e948</span>
+            </li>
+            <li>
+                <i class="icon-clothes"></i>
+                <h4>.icon-clothes</h4>
+                <span>\e975</span>
+            </li>
+            <li>
+                <i class="icon-goto"></i>
+                <h4>.icon-goto</h4>
+                <span>\e949</span>
+            </li>
+            <li>
+                <i class="icon-wifi"></i>
+                <h4>.icon-wifi</h4>
+                <span>\e921</span>
+            </li>
+            <li>
+                <i class="icon-chart-bar"></i>
+                <h4>.icon-chart-bar</h4>
+                <span>\e96f</span>
+            </li>
+            <li>
+                <i class="icon-chart-pie"></i>
+                <h4>.icon-chart-pie</h4>
+                <span>\e971</span>
+            </li>
+            <li>
+                <i class="icon-chart-line"></i>
+                <h4>.icon-chart-line</h4>
+                <span>\e970</span>
+            </li>
+            <li>
+                <i class="icon-rmb"></i>
+                <h4>.icon-rmb</h4>
+                <span>\e927</span>
+            </li>
+            <li>
+                <i class="icon-dollar"></i>
+                <h4>.icon-dollar</h4>
+                <span>\e95c</span>
+            </li>
+            <li>
+                <i class="icon-credit-card"></i>
+                <h4>.icon-credit-card</h4>
+                <span>\e97b</span>
+            </li>
+            <li>
+                <i class="icon-wallet"></i>
+                <h4>.icon-wallet</h4>
+                <span>\e91d</span>
+            </li>
+            <li>
+                <i class="icon-purse"></i>
+                <h4>.icon-purse</h4>
+                <span>\e945</span>
+            </li>
+            <li>
+                <i class="icon-lucky-money"></i>
+                <h4>.icon-lucky-money</h4>
+                <span>\e958</span>
+            </li>
+            <li>
+                <i class="icon-truck"></i>
+                <h4>.icon-truck</h4>
+                <span>\e919</span>
+            </li>
+            <li>
+                <i class="icon-plane"></i>
+                <h4>.icon-plane</h4>
+                <span>\e60b</span>
+            </li>
+            <li>
+                <i class="icon-ie"></i>
+                <h4>.icon-ie</h4>
+                <span>\e94f</span>
+            </li>
+            <li>
+                <i class="icon-chrome"></i>
+                <h4>.icon-chrome</h4>
+                <span>\e973</span>
+            </li>
+            <li>
+                <i class="icon-safari"></i>
+                <h4>.icon-safari</h4>
+                <span>\e929</span>
+            </li>
+            <li>
+                <i class="icon-flag"></i>
+                <h4>.icon-flag</h4>
+                <span>\e947</span>
+            </li>
+            <li>
+                <i class="icon-loading"></i>
+                <h4>.icon-loading</h4>
+                <span>\e955</span>
+            </li>
+            <li>
+                <i class="icon-enter"></i>
+                <h4>.icon-enter</h4>
+                <span>\e965</span>
+            </li>
+            <li>
+                <i class="icon-exit"></i>
+                <h4>.icon-exit</h4>
+                <span>\e963</span>
+            </li>
+            <li>
+                <i class="icon-angle-up"></i>
+                <h4>.icon-angle-up</h4>
+                <span>\e984</span>
+            </li>
+            <li>
+                <i class="icon-angle-down"></i>
+                <h4>.icon-angle-down</h4>
+                <span>\e981</span>
+            </li>
+            <li>
+                <i class="icon-angle-left"></i>
+                <h4>.icon-angle-left</h4>
+                <span>\e982</span>
+            </li>
+            <li>
+                <i class="icon-angle-right"></i>
+                <h4>.icon-angle-right</h4>
+                <span>\e983</span>
+            </li>
+            <li>
+                <i class="icon-move"></i>
+                <h4>.icon-move</h4>
+                <span>\e93e</span>
+            </li>
+            <li>
+                <i class="icon-double-angle-up"></i>
+                <h4>.icon-double-angle-up</h4>
+                <span>\e960</span>
+            </li>
+            <li>
+                <i class="icon-double-angle-down"></i>
+                <h4>.icon-double-angle-down</h4>
+                <span>\e95d</span>
+            </li>
+            <li>
+                <i class="icon-double-angle-left"></i>
+                <h4>.icon-double-angle-left</h4>
+                <span>\e95e</span>
+            </li>
+            <li>
+                <i class="icon-double-angle-right"></i>
+                <h4>.icon-double-angle-right</h4>
+                <span>\e95f</span>
+            </li>
+            <li>
+                <i class="icon-caret-up"></i>
+                <h4>.icon-caret-up</h4>
+                <span>\e96e</span>
+            </li>
+            <li>
+                <i class="icon-caret-down"></i>
+                <h4>.icon-caret-down</h4>
+                <span>\e96b</span>
+            </li>
+            <li>
+                <i class="icon-caret-left"></i>
+                <h4>.icon-caret-left</h4>
+                <span>\e96c</span>
+            </li>
+            <li>
+                <i class="icon-caret-right"></i>
+                <h4>.icon-caret-right</h4>
+                <span>\e96d</span>
+            </li>
+            <li>
+                <i class="icon-play"></i>
+                <h4>.icon-play</h4>
+                <span>\e944</span>
+            </li>
+            <li>
+                <i class="icon-pause"></i>
+                <h4>.icon-pause</h4>
+                <span>\e941</span>
+            </li>
+            <li>
+                <i class="icon-step-forward"></i>
+                <h4>.icon-step-forward</h4>
+                <span>\e935</span>
+            </li>
+            <li>
+                <i class="icon-step-backward"></i>
+                <h4>.icon-step-backward</h4>
+                <span>\e934</span>
+            </li>
+            <li>
+                <i class="icon-video"></i>
+                <h4>.icon-video</h4>
+                <span>\e91b</span>
+            </li>
+            <li>
+                <i class="icon-music"></i>
+                <h4>.icon-music</h4>
+                <span>\e93f</span>
+            </li>
+            <li>
+                <i class="icon-mic"></i>
+                <h4>.icon-mic</h4>
+                <span>\e93b</span>
+            </li>
+            <li>
+                <i class="icon-speaker"></i>
+                <h4>.icon-speaker</h4>
+                <span>\e932</span>
+            </li>
+            <li>
+                <i class="icon-speaker-off"></i>
+                <h4>.icon-speaker-off</h4>
+                <span>\e931</span>
+            </li>
+            <li>
+                <i class="icon-android"></i>
+                <h4>.icon-android</h4>
+                <span>\e980</span>
+            </li>
+            <li>
+                <i class="icon-apple"></i>
+                <h4>.icon-apple</h4>
+                <span>\e985</span>
+            </li>
+            <li>
+                <i class="icon-iphone"></i>
+                <h4>.icon-iphone</h4>
+                <span>\e951</span>
+            </li>
+            <li>
+                <i class="icon-ipad"></i>
+                <h4>.icon-ipad</h4>
+                <span>\e950</span>
+            </li>
+            <li>
+                <i class="icon-mac"></i>
+                <h4>.icon-mac</h4>
+                <span>\e936</span>
+            </li>
+            <li>
+                <i class="icon-macbook"></i>
+                <h4>.icon-macbook</h4>
+                <span>\e937</span>
+            </li>
+            <li>
+                <i class="icon-qq"></i>
+                <h4>.icon-e923</h4>
+                <span>\e900</span>
+            </li>
+            <li>
+                <i class="icon-wechat"></i>
+                <h4>.icon-wechat</h4>
+                <span>\e91f</span>
+            </li>
+            <li>
+                <i class="icon-baidu"></i>
+                <h4>.icon-baidu</h4>
+                <span>\e987</span>
+            </li>
+            <li>
+                <i class="icon-weibo"></i>
+                <h4>.icon-weibo</h4>
+                <span>\e920</span>
+            </li>
+            <li>
+                <i class="icon-alipay"></i>
+                <h4>.icon-alipay</h4>
+                <span>\e97f</span>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

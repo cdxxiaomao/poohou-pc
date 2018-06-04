@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Select</title>
+    <link rel="stylesheet" type="text/css" href="css/pui-pc.css" />
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/pui-pc.js"></script>
+</head>
+
+<body>
+    <div class="plr30 mt30">
+        <h3 class="fz30">Select</h3>
+    </div>
+
+    
+    <section>
+        <div class="mlr30 pt20 clear bt mt30">
+            <div class="fl mr10">
+                <select class="w-full" pSelect>
+                    <option value="1">默认</option>
+                    <option value="2">选项二</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select pSelect>
+                    <option value="1">带disabled</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select pSelect>
+                    <option value="1">选项1</option>
+                    <option value="2" selected>自定义selected</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="round" pSelect>
+                    <option value="1">圆的 Select</option>
+                    <option value="2">选项二</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+        </div>
+        <div class="plr30 ptb20">
+            <select class="w-full" pSelect>
+                <option value="1">宽度100%</option>
+                <option value="2">选项二</option>
+                <option value="3">选项三</option>
+            </select>
+        </div>
+    </section>
+    <section>
+        <div class="bb mlr30 ptb10">
+            <h4>带事件回调</h4>
+        </div>
+        <div class="plr30 ptb20 clear">
+            <select id="mySelect">
+                <option value="1">带事件回调</option>
+                <option value="2">选项二</option>
+                <option value="3">选项三</option>
+            </select>
+            <script>
+                $(function () {
+                    $("#mySelect").pSelect(function (e) {
+                        alert("你点击的是第" + parseInt(e.index() + 1) + "个;内容为‘" + e.text() + "’;value为:" + e.val())
+                    });
+                })
+            </script>
+        </div>
+    </section>
+    <section>
+        <div class="bb mlr30 ptb10">
+            <h4>尺寸</h4>
+        </div>
+        <div class="plr30 ptb20 clear">
+            <div class="fl mr10">
+                <select class="select-s" pSelect>
+                    <option value="1">小</option>
+                    <option value="2">选项二</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="select-m" pSelect>
+                    <option value="1">中</option>
+                    <option value="2">选项二</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select pSelect>
+                    <option value="1">默认</option>
+                    <option value="2">选项二</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="select-b" pSelect>
+                    <option value="1">大</option>
+                    <option value="2">选项二</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bb mlr30 ptb10">
+            <h4>配色</h4>
+        </div>
+        <div class="plr30 ptb20 clear">
+            <div class="fl mr10">
+                <select class="bg-main" pSelect>
+                    <option value="1">主色</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="bg-second" pSelect>
+                    <option value="1">副色</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="bg-red" pSelect>
+                    <option value="1">红色</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="bg-orange" pSelect>
+                    <option value="1">橙色</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="bg-blue" pSelect>
+                    <option value="1">蓝色</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+            <div class="fl mr10">
+                <select class="bg-green" pSelect>
+                    <option value="1">绿色</option>
+                    <option value="2" disabled>disabled</option>
+                    <option value="3">选项三</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
